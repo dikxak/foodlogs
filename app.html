@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="/img/icon.png" />
+    <link rel="stylesheet" href="./css/circle.css" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/app.css" />
+    <script defer src="./js/app.js"></script>
+
+    <title>Food Log // Log Your Foods</title>
+  </head>
+  <body>
+    <header class="app-header">
+      <p class="welcome-msg">
+        🥗 Welcome to Food Logs,
+        <span><strong class="user-name">Dikshak</strong></span
+        >!
+      </p>
+      <img class="logo-small" src="./img/logo.png" alt="Food Logs Logo" />
+    </header>
+
+    <div class="container">
+      <div class="info">
+        <div class="info-box calorie-info">
+          <h2 class="info-text calorie-text">
+            Remaining <br />
+            Calories
+          </h2>
+          <div class="circle circle-calorie c100 primary-color big">
+            <p>
+              <span class="circle-calorie-value"> 785</span> <br />
+              <span> Kcal</span>
+            </p>
+            <div class="slice">
+              <div class="bar"></div>
+              <div class="fill"></div>
+            </div>
+          </div>
+        </div>
+        <div class="info-box protein-info">
+          <h2 class="info-text protein-text">
+            Remaining <br />
+            Protein
+          </h2>
+          <div class="circle circle-protein c100 primary-color small">
+            <p>
+              <span class="circle-protein-value"> 90</span> <br />
+              <span> Gms</span>
+            </p>
+            <div class="slice">
+              <div class="bar"></div>
+              <div class="fill"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="target-box">
+          <p>Calorie Budget:</p>
+          <p><span class="target-text calorie-target-text">1650</span> Kcal</p>
+        </div>
+
+        <div class="target-box">
+          <p>Protein Target:</p>
+          <p><span class="target-text protein-target-text">140</span> Gms</p>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <form class="form-food">
+          <input
+            type="text"
+            class="form-input-food form-input-food--name"
+            placeholder="Enter food name"
+          />
+          <input
+            type="number"
+            class="form-input-food form-input-food--weight"
+            placeholder="Enter food weight (g)"
+          />
+          <input
+            type="number"
+            class="form-input-food form-input-food--calorie"
+            placeholder="Enter food calories"
+          />
+          <input
+            type="number"
+            class="form-input-food form-input-food--protein"
+            placeholder="Enter food protein"
+          />
+          <input type="submit" class="btn btn-food" value="+Add Food" />
+        </form>
+      </div>
+
+      <div class="food-list-summary">
+        <div class="food-list">
+          <h2 class="food-list-text">Your Food List</h2>
+          <div class="logged-food-container">
+            <div class="logged-food">
+              <p class="food-name"><span>Rice</span></p>
+
+              <div class="food-info">
+                <div class="food-info-flex">
+                  <svg
+                    aria-hidden="true"
+                    width="20"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                  >
+                    <path
+                      fill="#736E9E"
+                      d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z"
+                    ></path>
+                  </svg>
+
+                  <p class="food-text"><span>100</span> Kcal</p>
+                </div>
+
+                <div class="food-info-flex">
+                  <svg
+                    width="20"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#736E9E"
+                      d="M462.8 49.57a169.44 169.44 0 0 0-239.5 0C187.82 85 160.13 128 160.13 192v85.83l-40.62 40.59c-9.7 9.69-24 11.07-36.78 6a60.33 60.33 0 0 0-65 98.72C33 438.39 54.24 442.7 73.85 438.21c-4.5 19.6-.18 40.83 15.1 56.1a60.35 60.35 0 0 0 98.8-65c-5.09-12.73-3.72-27 6-36.75L234.36 352h85.89a187.87 187.87 0 0 0 61.89-10c-39.64-43.89-39.83-110.23 1.05-151.07 34.38-34.36 86.76-39.46 128.74-16.8 1.3-44.96-14.81-90.28-49.13-124.56z"
+                    ></path>
+                  </svg>
+                  <p class="food-text"><span>02</span>gms Protein</p>
+                </div>
+
+                <div class="food-info-flex">
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.9194 20.8996L20.4961 7.20599C20.3179 6.49396 19.7254 6.00036 19.049 6.00036H16.2248C16.3922 5.52927 16.5004 5.02911 16.5004 4.50036C16.5004 2.01505 14.4858 0.000366211 12.0004 0.000366211C9.51512 0.000366211 7.50043 2.01505 7.50043 4.50036C7.50043 5.02911 7.60825 5.52927 7.77606 6.00036H4.95184C4.27543 6.00036 3.68246 6.49442 3.50481 7.20599L0.0805859 20.8996C-0.309883 22.461 0.767774 23.9999 2.25137 23.9999H21.749C23.2322 23.9999 24.3098 22.461 23.9194 20.8996V20.8996ZM12 5.99989C11.1731 5.99989 10.5 5.32677 10.5 4.49989C10.5 3.67302 11.1731 2.9999 12 2.9999C12.8268 2.9999 13.5 3.67302 13.5 4.49989C13.5 5.32677 12.8268 5.99989 12 5.99989Z"
+                      fill="#736E9E"
+                    />
+                  </svg>
+                  <p class="food-text"><span>100</span> Gms</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="logged-food">
+              <p class="food-name"><span>Peanut Butter</span></p>
+
+              <div class="food-info">
+                <div>
+                  <svg
+                    aria-hidden="true"
+                    width="20"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 384 512"
+                  >
+                    <path
+                      fill="#736E9E"
+                      d="M216 23.86c0-23.8-30.65-32.77-44.15-13.04C48 191.85 224 200 224 288c0 35.63-29.11 64.46-64.85 63.99-35.17-.45-63.15-29.77-63.15-64.94v-85.51c0-21.7-26.47-32.23-41.43-16.5C27.8 213.16 0 261.33 0 320c0 105.87 86.13 192 192 192s192-86.13 192-192c0-170.29-168-193-168-296.14z"
+                    ></path>
+                  </svg>
+
+                  <p class="food-text"><span>780</span> Kcal</p>
+                </div>
+
+                <div>
+                  <svg
+                    width="20"
+                    height="20"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 512 512"
+                  >
+                    <path
+                      fill="#736E9E"
+                      d="M462.8 49.57a169.44 169.44 0 0 0-239.5 0C187.82 85 160.13 128 160.13 192v85.83l-40.62 40.59c-9.7 9.69-24 11.07-36.78 6a60.33 60.33 0 0 0-65 98.72C33 438.39 54.24 442.7 73.85 438.21c-4.5 19.6-.18 40.83 15.1 56.1a60.35 60.35 0 0 0 98.8-65c-5.09-12.73-3.72-27 6-36.75L234.36 352h85.89a187.87 187.87 0 0 0 61.89-10c-39.64-43.89-39.83-110.23 1.05-151.07 34.38-34.36 86.76-39.46 128.74-16.8 1.3-44.96-14.81-90.28-49.13-124.56z"
+                    ></path>
+                  </svg>
+                  <p class="food-text"><span>90</span>gms Protein</p>
+                </div>
+
+                <div>
+                  <svg
+                    width="20"
+                    height="20"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M23.9194 20.8996L20.4961 7.20599C20.3179 6.49396 19.7254 6.00036 19.049 6.00036H16.2248C16.3922 5.52927 16.5004 5.02911 16.5004 4.50036C16.5004 2.01505 14.4858 0.000366211 12.0004 0.000366211C9.51512 0.000366211 7.50043 2.01505 7.50043 4.50036C7.50043 5.02911 7.60825 5.52927 7.77606 6.00036H4.95184C4.27543 6.00036 3.68246 6.49442 3.50481 7.20599L0.0805859 20.8996C-0.309883 22.461 0.767774 23.9999 2.25137 23.9999H21.749C23.2322 23.9999 24.3098 22.461 23.9194 20.8996V20.8996ZM12 5.99989C11.1731 5.99989 10.5 5.32677 10.5 4.49989C10.5 3.67302 11.1731 2.9999 12 2.9999C12.8268 2.9999 13.5 3.67302 13.5 4.49989C13.5 5.32677 12.8268 5.99989 12 5.99989Z"
+                      fill="#736E9E"
+                    />
+                  </svg>
+                  <p class="food-text"><span>450</span> Gms</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="summary">
+          <h2 class="food-list-text">Food Summary</h2>
+          <div class="summary-container">
+            <div class="summary-text">
+              <p>Last Logged Date:</p>
+              <p>
+                &nbsp;
+                <span class="summary-date summary-highlight"> Jan 18 2022</span>
+              </p>
+            </div>
+
+            <div class="summary-text summary-text-dynamic">
+              <p>Calories Consumed:</p>
+              <p>
+                &nbsp;
+                <span class="summary-highlight summary-calorie">1500</span>
+                <span class="summary-highlight">Kcal</span>
+              </p>
+            </div>
+
+            <div class="summary-text summary-text-dynamic">
+              <p>Protein Consumed:</p>
+              <p>
+                &nbsp;
+                <span class="summary-highlight summary-protein"> 150</span>
+                <span class="summary-highlight">Gms</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sort-by-container">
+        <button class="btn sort reset">
+          Reset Foods
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="reset-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+            />
+          </svg>
+        </button>
+        <button class="btn sort sort-by-calories">
+          Sort by calories &#8595;
+        </button>
+        <button class="btn sort sort-by-protein">
+          Sort by protein &#8595;
+        </button>
+      </div>
+    </div>
+  </body>
+</html>

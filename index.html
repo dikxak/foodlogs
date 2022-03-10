@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png" />
+    <link rel="stylesheet" href="./css/general.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/script.js"></script>
+
+    <title>Food Log // Log Your Foods</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./img/logo.png" alt="Company Logo" class="logo" />
+    </header>
+
+    <section class="hero-section">
+      <div class="container grid--cols-2">
+        <div class="hero-text-box">
+          <h1 class="primary-heading">
+            Get <span class="highlight">started</span> with food logs
+          </h1>
+          <form class="form">
+            <div>
+              <input
+                type="text"
+                class="form-input form-input--first-name"
+                placeholder="Enter your first name"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                class="form-input form-input--last-name"
+                placeholder="Enter your last name"
+              />
+            </div>
+            <div>
+              <input
+                type="number"
+                class="form-input form-input--calorie"
+                placeholder="Enter your calorie budget"
+              />
+            </div>
+            <div>
+              <input
+                type="number"
+                class="form-input form-input--protein"
+                placeholder="Enter your protein target"
+              />
+            </div>
+
+            <input type="submit" class="hidden" />
+          </form>
+
+          <div class="submit">
+            <button class="btn btn--big btn-submit">Get Started</button>
+            <span>OR</span>
+            <button class="btn btn-set-up">I have already setup</button>
+          </div>
+        </div>
+        <img
+          src="./img/hero-img.png"
+          alt="Illustration of girl running and smartphone with web app features"
+          class="hero-img"
+        />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <p>
+          &copy; Copyright 2022 & Designed by <strong>Dikshak Poudel</strong> in
+          <svg
+            width="18"
+            height="18"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+          >
+            <path
+              fill="red"
+              d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"
+            ></path>
+          </svg>
+          of Nepal, Kathmandu Valley. Don't claim as your own design and idea.
+        </p>
+      </div>
+    </footer>
+
+    <div class="override-warning-msg hidden">
+      <p class="override-warning-info-msg">🧐 You have previous data stored</p>
+      <p class="override-warning-question-msg">Do you want to override it?</p>
+      <div class="opt-btns">
+        <button class="btn opt-btn opt-btn-yes">Yes</button>
+        <button class="btn opt-btn opt-btn-no">No</button>
+      </div>
+    </div>
+    <div class="overlay hidden"></div>
+  </body>
+</html>

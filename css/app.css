@@ -1,0 +1,260 @@
+/* App Page Styling */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1.2rem;
+  margin-bottom: 3.2rem;
+  padding: 0 3.2rem;
+}
+
+.welcome-msg {
+  font-size: 1.8rem;
+}
+
+.logo-small {
+  width: 8rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  row-gap: 3.2rem;
+  column-gap: 6.4rem;
+
+  margin-bottom: 6.4rem;
+}
+
+.info-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6.4rem;
+}
+
+.info-text {
+  color: #495057;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.calorie-text {
+  font-size: 3.6rem;
+}
+
+.protein-text {
+  font-size: 3rem;
+}
+
+.target-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  font-size: 1.8rem;
+  color: #868e96;
+  text-transform: uppercase;
+
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.1);
+  padding: 0.8rem 0;
+
+  border-radius: 0.5rem;
+}
+
+.c100.big > p,
+.c100.small > p {
+  letter-spacing: 0.35rem;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.c100.big > p {
+  font-size: 3.2rem;
+  font-weight: 500;
+}
+
+.c100.small > p {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.form-section {
+  background-color: #51cf66;
+  border-radius: 1rem;
+  padding: 1.2rem 2.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.form-food {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.form-input-food {
+  padding: 1.2rem 1.6rem;
+  border: none;
+  border-radius: 0.5rem;
+
+  font-size: 1.4rem;
+  color: #868e96;
+}
+
+.form-input-food:focus {
+  outline-style: solid;
+  outline-color: #f7f7f7;
+}
+
+.btn-food {
+  background-color: #736e9e;
+  padding: 1.2rem 1.6rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+}
+
+.btn-food:hover {
+  background-color: #8d87be;
+}
+
+/* Food List Styling */
+.food-list-summary {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 8rem;
+}
+
+.food-list-text {
+  font-size: 3rem;
+  color: #736e9e;
+  letter-spacing: -1.25px;
+
+  margin-bottom: 3.2rem;
+}
+
+.logged-food-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  height: 32rem;
+  overflow-y: auto;
+
+  padding: 1.2rem 1.6rem;
+  margin-bottom: 1.2rem;
+
+  background-color: #d3f9d8;
+  border-radius: 1rem;
+}
+
+.logged-food-container::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.logged-food-container::-webkit-scrollbar-thumb {
+  background-color: #37b24d;
+  border-radius: 1rem;
+}
+
+.logged-food {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+
+  padding: 1.2rem 2.4rem;
+
+  border-radius: 1rem;
+  background-color: #fff;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.08);
+}
+
+.food-name {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.logged-food div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 0.8rem;
+}
+
+.food-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+}
+
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.summary-text {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  align-items: center;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.1);
+  padding: 1.2rem 2.4rem;
+  border-radius: 5px;
+}
+
+.summary-text.hidden {
+  display: none;
+}
+
+.summary-text p {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.summary-highlight {
+  color: #51cf66;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.sort-by-container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
+  transform: translateX(40%);
+  width: 60rem;
+  margin-bottom: 2.4rem;
+
+  transition: opacity 0.25s;
+}
+
+.sort {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #495057;
+
+  background-color: transparent;
+
+  padding: 0.8rem;
+  box-shadow: none;
+  letter-spacing: 0.035rem;
+}
+
+.sort:hover {
+  transform: translateY(1.5px);
+}
+
+.btn.sort:active {
+  box-shadow: none;
+}
+
+.reset {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.reset-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
