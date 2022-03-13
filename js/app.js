@@ -192,6 +192,7 @@ class App {
     this._resetFormInputs();
     circleCalorie.classList.remove(this.#previousCalorieCircleClass);
     circleProtein.classList.remove(this.#previousProteinCircleClass);
+    this.#foods = [];
   }
 
   _updateFoodData(foodCalorie, foodProtein) {
